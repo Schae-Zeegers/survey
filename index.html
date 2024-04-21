@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melsoft Academy Survey Form</title>
+</head>
+<body>
+    <h1>Melsoft Academy Survey Form</h1>
+    <p>Welcome to the Melsoft Academy Programming Language Preference Survey!<br> By participating in this survey, you'll provide essential insights that will guide our curriculum and resource development efforts.</p>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend><strong>Add User</strong></legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="Status">Status</label>
+                    <select name="Status" id="Status">
+                        <option value="Student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Guest">Guest</option>
+                    </select>
+            
+                <p>Choose your favourite programming language:</p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br><br>
+                <label>Comments</label><br>
+                <textarea name="Comment" rows="5" cols="60"></textarea><br><br>
+    
+                <label for="Current_Date">Current Date:</label>
+                <input type="date" id="Current_Date" name="Current_Date">
+        
+
+                <p>Thank you for taking the time to share your preferences with us.</p>
+                <input type="checkbox" id="Newsletter" name="Newsletter" value="Newsletter">
+                <label for="Newsletter"> Sign up for our newsletter.</label><br>
+                <input type="checkbox" id="Terms" name="Terms" value="Terms" required>
+                <label for="Terms"> Agree to Terms and Conditions.</label><br><br>
+                <input type="submit" value="Submit">
+
+        </fieldset>
+    </form>
+</body>
+</html>
